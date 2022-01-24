@@ -10,6 +10,10 @@ export class AppComponent  {
   name:string;date:string;
   amount:number;height:number;
 
+  car={
+    make:'toyota',model:'sunny',year:2211
+  };
+
   onHeightChange(event:any){
     this.height=parseFloat(event.target.value);
   }
