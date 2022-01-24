@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent  {
  
   name:string;date:string;
-  amount:number;
+  amount:number;height:number;
 
+  onHeightChange(event:any){
+    this.height=parseFloat(event.target.value);
+  }
   onNameChange(event:any){
     this.name=event.target.value;
   }
