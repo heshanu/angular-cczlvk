@@ -71,4 +71,18 @@
 </div>
 </div>
 
+<div class="row">
+<div class="form-group col">
+  <label>Killomters</label>
+  <input class="form-control"  (input)="onHeightChange($event)" />
+</div>
+
+<div class="col">
+  <label><b>Killomters</b></label>
+  <div>
+    {{ miles | convert }}
+  </div>
+</div>
+</div>
+
 </div>

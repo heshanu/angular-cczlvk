@@ -8,11 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent  {
  
   name:string;date:string;
-  amount:number;height:number;
+  amount:number;height:number;miles:number;
 
-  car={
-    make:'toyota',model:'sunny',year:2211
-  };
 
   onHeightChange(event:any){
     this.height=parseFloat(event.target.value);
@@ -27,6 +24,11 @@ export class AppComponent  {
 
   onAmountChange(event:any){
     this.amount=parseFloat(event.target.value);
+  }
+
+  onMilesChange(event:any){
+    this.miles=parseFloat(event.target.value);
+    console.log(this.miles);
   }
 }
 
