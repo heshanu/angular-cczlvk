@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
  
-  
+  name:string;
+
+  onNameChange(event:any){
+    this.name=event.target.value;
+  }
+
 }
+
