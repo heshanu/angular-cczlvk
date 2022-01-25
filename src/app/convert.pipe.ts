@@ -17,7 +17,7 @@ export class ConvertPipe implements PipeTransform {
         default:
           throw new Error('Target unit isnot matches!');
       }
-      return value*1.6;
+
   }
 
 }
